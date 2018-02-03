@@ -1,0 +1,220 @@
+from sense_hat import SenseHat
+import time
+sense = SenseHat()
+r = (255,0,0)
+y = (0,0,255)
+B = (0, 0, 0)
+def f():
+  radar_mark = [
+    B,B,y,y,y,y,B,B,
+    B,y,B,B,B,B,y,B,
+    y,B,B,B,B,B,B,y,
+    y,B,B,r,r,r,r,y,
+    y,B,B,r,r,r,r,y,
+    y,B,B,B,B,B,B,y,
+    B,y,B,B,B,B,y,B,
+    B,B,y,y,y,y,B,B
+    ]
+  sense.set_pixels(radar_mark)
+  time.sleep(0.5)
+  u = (0,200,0)
+  radar_mark = [
+    B,B,y,y,y,y,B,B,
+    B,y,B,B,B,B,y,B,
+    y,B,B,B,B,r,r,y,
+    y,B,B,r,r,r,r,y,
+    y,B,B,r,r,B,u,y,
+    y,B,B,B,B,B,B,y,
+    B,y,B,B,B,B,y,B,
+    B,B,y,y,y,y,B,B
+    ]
+  sense.set_pixels(radar_mark)
+  time.sleep(0.5)
+  u = (0,150,0)
+  radar_mark = [
+    B,B,y,y,y,y,B,B,
+    B,y,B,B,B,r,y,B,
+    y,B,B,B,r,r,r,y,
+    y,B,B,r,r,r,B,y,
+    y,B,B,r,r,B,u,y,
+    y,B,B,B,B,B,B,y,
+    B,y,B,B,B,B,y,B,
+    B,B,y,y,y,y,B,B
+    ]
+  sense.set_pixels(radar_mark)
+  time.sleep(0.5)
+  u = (0,100,0)
+  radar_mark = [
+    B,B,y,y,y,y,B,B,
+    B,y,B,B,r,r,y,B,
+    y,B,B,B,r,r,B,y,
+    y,B,B,r,r,B,B,y,
+    y,B,B,r,r,B,u,y,
+    y,B,B,B,B,B,B,y,
+    B,y,B,B,B,B,y,B,
+    B,B,y,y,y,y,B,B
+    ]
+  sense.set_pixels(radar_mark)
+  time.sleep(0.5)
+  #first part
+  u = (0,50,0)
+  radar_mark = [
+    B,B,y,y,y,y,B,B,
+    B,y,B,r,r,B,y,B,
+    y,B,B,r,r,B,B,y,
+    y,B,B,r,r,B,B,y,
+    y,B,B,r,r,B,u,y,
+    y,B,B,B,B,B,B,y,
+    B,y,B,B,B,B,y,B,
+    B,B,y,y,y,y,B,B
+    ]
+  sense.set_pixels(radar_mark)
+  time.sleep(0.5)
+  u = (0,25,0)
+  radar_mark = [
+    B,B,y,y,y,y,B,B,
+    B,y,r,r,B,B,y,B,
+    y,B,r,r,B,B,B,y,
+    y,B,B,r,r,B,B,y,
+    y,B,B,r,r,B,u,y,
+    y,B,B,B,B,B,B,y,
+    B,y,B,B,B,B,y,B,
+    B,B,y,y,y,y,B,B
+    ]
+  sense.set_pixels(radar_mark)
+  time.sleep(0.5)
+  u = (0,20,0)
+  radar_mark = [
+    B,B,y,y,y,y,B,B,
+    B,y,r,B,B,B,y,B,
+    y,r,r,r,B,B,B,y,
+    y,B,r,r,r,B,B,y,
+    y,B,B,r,r,B,u,y,
+    y,B,B,B,B,B,B,y,
+    B,y,B,B,B,B,y,B,
+    B,B,y,y,y,y,B,B
+    ]
+  sense.set_pixels(radar_mark)
+  time.sleep(0.5)
+  u = (0,15,0)
+  radar_mark = [
+    B,B,y,y,y,y,B,B,
+    B,y,B,B,B,B,y,B,
+    y,r,r,B,B,B,B,y,
+    y,r,r,r,r,B,B,y,
+    y,B,B,r,r,B,u,y,
+    y,B,B,B,B,B,B,y,
+    B,y,B,B,B,B,y,B,
+    B,B,y,y,y,y,B,B
+    ]
+  sense.set_pixels(radar_mark)
+  time.sleep(0.5)
+  #second part
+  u = (0,10,0)
+  radar_mark = [
+    B,B,y,y,y,y,B,B,
+    B,y,B,B,B,B,y,B,
+    y,B,B,B,B,B,B,y,
+    y,r,r,r,r,B,B,y,
+    y,r,r,r,r,B,u,y,
+    y,B,B,B,B,B,B,y,
+    B,y,B,B,B,B,y,B,
+    B,B,y,y,y,y,B,B
+    ]
+  sense.set_pixels(radar_mark)
+  time.sleep(0.5)
+  u = (0,5,0)
+  radar_mark = [
+    B,B,y,y,y,y,B,B,
+    B,y,B,B,B,B,y,B,
+    y,B,B,B,B,B,B,y,
+    y,B,B,r,r,B,B,y,
+    y,r,r,r,r,B,u,y,
+    y,r,r,B,B,B,B,y,
+    B,y,B,B,B,B,y,B,
+    B,B,y,y,y,y,B,B
+    ]
+  sense.set_pixels(radar_mark)
+  time.sleep(0.5)
+  u = (0,0,0)
+  radar_mark = [
+    B,B,y,y,y,y,B,B,
+    B,y,B,B,B,B,y,B,
+    y,B,B,B,B,B,B,y,
+    y,B,B,r,r,B,B,y,
+    y,B,r,r,r,B,u,y,
+    y,r,r,r,B,B,B,y,
+    B,y,r,B,B,B,y,B,
+    B,B,y,y,y,y,B,B
+    ]
+  sense.set_pixels(radar_mark)
+  time.sleep(0.5)
+  
+  radar_mark = [
+    B,B,y,y,y,y,B,B,
+    B,y,B,B,B,B,y,B,
+    y,B,B,B,B,B,B,y,
+    y,B,B,r,r,B,B,y,
+    y,B,B,r,r,B,u,y,
+    y,B,r,r,B,B,B,y,
+    B,y,r,r,B,B,y,B,
+    B,B,y,y,y,y,B,B
+    ]
+  sense.set_pixels(radar_mark)
+  time.sleep(0.5)
+  #third part
+  
+  radar_mark = [
+    B,B,y,y,y,y,B,B,
+    B,y,B,B,B,B,y,B,
+    y,B,B,B,B,B,B,y,
+    y,B,B,r,r,B,B,y,
+    y,B,B,r,r,B,u,y,
+    y,B,B,r,r,B,B,y,
+    B,y,B,r,r,B,y,B,
+    B,B,y,y,y,y,B,B
+    ]
+  sense.set_pixels(radar_mark)
+  time.sleep(0.5)
+  
+  radar_mark = [
+    B,B,y,y,y,y,B,B,
+    B,y,B,B,B,B,y,B,
+    y,B,B,B,B,B,B,y,
+    y,B,B,r,r,B,B,y,
+    y,B,B,r,r,B,u,y,
+    y,B,B,B,r,r,B,y,
+    B,y,B,B,r,r,y,B,
+    B,B,y,y,y,y,B,B
+    ]
+  sense.set_pixels(radar_mark)
+  time.sleep(0.5)
+  
+  radar_mark = [
+    B,B,y,y,y,y,B,B,
+    B,y,B,B,B,B,y,B,
+    y,B,B,B,B,B,B,y,
+    y,B,B,r,r,B,B,y,
+    y,B,B,r,r,r,u,y,
+    y,B,B,B,r,r,r,y,
+    B,y,B,B,B,r,y,B,
+    B,B,y,y,y,y,B,B
+    ]
+  sense.set_pixels(radar_mark)
+  time.sleep(0.5)
+  
+  radar_mark = [
+    B,B,y,y,y,y,B,B,
+    B,y,B,B,B,B,y,B,
+    y,B,B,B,B,B,B,y,
+    y,B,B,r,r,B,B,y,
+    y,B,B,r,r,r,r,y,
+    y,B,B,B,B,r,r,y,
+    B,y,B,B,B,B,y,B,
+    B,B,y,y,y,y,B,B
+    ]
+  sense.set_pixels(radar_mark)
+  time.sleep(0.5)
+  f()
+f()
+  
